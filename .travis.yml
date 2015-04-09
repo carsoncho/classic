@@ -17,7 +17,7 @@ install:
 
   # Install Drush
   - pear channel-discover pear.drush.org
-  - pear install drush/drush-6.5.0
+  - pear install drush/drush-6.3.0
   - phpenv rehash
 
   # Run composer
