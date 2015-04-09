@@ -9,6 +9,8 @@ mysql:
   encoding: utf8
 
 install:
+  # Update composer
+  - composer self-update
 
   # Create MySQL Database
   - mysql -e 'create database drupal;'
@@ -19,7 +21,7 @@ install:
   - phpenv rehash
 
   # Run composer
-  - composer self-update
+
   - cd ./tests/behat
   - composer install
   - cd ../../
